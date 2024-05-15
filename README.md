@@ -28,18 +28,18 @@ El código se divide en varias partes:
 ## Archivo Helpers:
 - retrieve_phone_code:
 Este método recupera un código de confirmación de teléfono de los registros de rendimiento del navegador y lo devuelve como una cadena de texto. Utilice este método después de haber solicitado el código en la aplicación.
-- wait_visibility_of_element:
-Espera hasta que el elemento especificado sea visible en la página antes de continuar con la siguiente acción.
-- wait_to_be_clickable_of_element:
-Espera hasta que el elemento especificado sea clickeable antes de continuar con la siguiente acción.
+- wait_visibility_of_element: Espera hasta que el elemento especificado sea visible en la página antes de continuar con la siguiente acción.
+- wait_to_be_clickable_of_element: Espera hasta que el elemento especificado sea clickeable antes de continuar con la siguiente acción.
 
 ## Archivo UrbanRotesPage:
-
-La clase UrbanRoutesPage incluye varios métodos para interactuar con la aplicación web:
 
 -set_from_to: Establece las direcciones de origen y destino.
 -get_from_to: Obtiene los valores actuales de las direcciones de origen y destino.
 -click_botton_confort: Realiza clics en los botones para pedir un taxi y seleccionar opciones de confort.
+-click_find_taxi: Realiza un clic en el botón para solicitar un taxi.
+-check_botton_find_taxi: Verifica si el botón para buscar un taxi está visible.
+-check_taxi_driver_selected: Verifica si se ha seleccionado un conductor.
+-check_order_header_title: Verifica si el título del encabezado del pedido está visible.
 -set_steps_number_and_code_phone: Ingresa un número de teléfono y espera un código SMS.
 -set_steps_payment_method: Ingresa detalles de la tarjeta de crédito y confirma el método de pago.
 -set_message_for_driver: Envía un mensaje al conductor.
